@@ -120,15 +120,25 @@
     //如果control超过父视图，让父视图可滑动
     CGFloat maxX = CGRectGetMaxX([self.titleSelectScrollView viewWithTag:900 + _nowSelectPage].frame);
     maxX = MAX(maxX, jagainScreenWidth);
-    self.titleSelectScrollView.contentSize = CGSizeMake(maxX,  self.titleSelectScrollView.contentSize.height);
-    
-    //滑动
-    
-    
+    self.titleSelectScrollView.contentSize = CGSizeMake(maxX, self.titleSelectScrollView.contentSize.height);
+
+    //改变选择的效果
     [self changeTheSelectSignWithControl:[self.titleSelectScrollView viewWithTag:900 + _nowSelectPage]];
+    
 }
 
 - (void)changeTheSelectSignWithControl:(UIControl *)control{
+    CGFloat maxX = self.titleSelectScrollView.contentSize.width;
+    
+    //滑动
+    if (maxX > jagainScreenWidth) {
+        CGFloat offestX = [self.titleSelectScrollView viewWithTag:900 + _nowSelectPage].center.x - jagainScreenWidth / 2;
+        offestX = offestX + jagainScreenWidth / 2 > maxX - jagainScreenWidth ? maxX - jagainScreenWidth : offestX;
+        offestX = offestX < 0 ? 0 : offestX;
+        
+        [self.titleSelectScrollView setContentOffset:CGPointMake(offestX, 0) animated:YES];
+    }
+    
     [UIView animateWithDuration:0.2 animations:^{
         self.selectSignView.bounds = CGRectMake(self.selectSignView.bounds.origin.x, self.selectSignView.bounds.origin.y, 0, self.selectSignView.bounds.size.height);
     } completion:^(BOOL finished) {

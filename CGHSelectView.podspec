@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CGHSelectView"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "A SelectView."
   s.homepage     = "https://github.com/JagainChen/JagainLocationSelectView"
   s.license      = "MIT"

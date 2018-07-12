@@ -14,7 +14,10 @@
 *@param page 当前展示的页数下标
 */
 - (NSInteger )numberOfRowsAtPage:(NSInteger )page;
+```
 ## 实现的效果
 ![](https://github.com/JagainChen/JagainLocationSelectView/blob/master/ScreenShot.png)  
+## 联系方式
+Email ：jagain@icloud.com
 
 

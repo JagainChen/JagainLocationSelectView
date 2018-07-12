@@ -16,7 +16,7 @@
 - (NSInteger )numberOfRowsAtPage:(NSInteger )page;
 ```
 ## 实现的效果
-![](https://github.com/JagainChen/JagainLocationSelectView/blob/master/ScreenShot.png)  
+![](https://github.com/JagainChen/JagainLocationSelectView/blob/master/ScreenShot.jpeg)  
 ## 联系方式
 Email ：jagain@icloud.com
 

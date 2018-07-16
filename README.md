@@ -1,7 +1,9 @@
 # LocationSelectView
 简单实现了一个地址选择器，主要为了自己尝试git
 ## 使用方式
-### pod CGHSelectView
+>使用CocoaPods
+>`pod 'CGHSelectView'
+>或者直接将CGHSelectView文件夹拖入到项目中
 实现以下代理
 ```Objective-C
 #pragma mark - CGHSelectViewDelegete

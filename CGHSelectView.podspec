@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "Jagain" => "jagain@icloud.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/JagainChen/JagainLocationSelectView.git", :tag => "#{s.version}" }
-  s.source_files  = 'CGHSelectView/CGHSelectView.h'
+  s.source_files  = 'CGHSelectView/*.{h,m}'
   s.framework  = "UIKit"
   s.dependency "Masonry", "~> 1.1.0"
 end

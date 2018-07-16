@@ -1,7 +1,7 @@
 # LocationSelectView
 简单实现了一个地址选择器，主要为了自己尝试git
 ## 使用方式
-pod CGHSelectView
+### pod CGHSelectView
 实现以下代理
 ```Objective-C
 #pragma mark - CGHSelectViewDelegete
